@@ -1,0 +1,396 @@
+// Microsoft Visual C++ generated resource script.
+//
+#include "resource.h"
+
+#define APSTUDIO_READONLY_SYMBOLS
+/////////////////////////////////////////////////////////////////////////////
+//
+// Generated from the TEXTINCLUDE 2 resource.
+//
+#include "afxres.h"
+
+/////////////////////////////////////////////////////////////////////////////
+#undef APSTUDIO_READONLY_SYMBOLS
+
+/////////////////////////////////////////////////////////////////////////////
+// Chinese (P.R.C.) resources
+
+#if !defined(AFX_RESOURCE_DLL) || defined(AFX_TARG_CHS)
+#ifdef _WIN32
+LANGUAGE LANG_CHINESE, SUBLANG_CHINESE_SIMPLIFIED
+#pragma code_page(936)
+#endif //_WIN32
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// Dialog
+//
+
+IDD_ABOUTBOX DIALOGEX 0, 0, 235, 55
+STYLE DS_SETFONT | DS_MODALFRAME | DS_FIXEDSYS | WS_POPUP | WS_CAPTION | WS_SYSMENU
+CAPTION "About taskServer"
+FONT 8, "MS Shell Dlg", 0, 0, 0x1
+BEGIN
+    ICON            IDR_MAINFRAME,IDC_STATIC,11,17,20,20
+    LTEXT           "taskServer Version 1.0",IDC_STATIC,40,10,119,8,SS_NOPREFIX
+    LTEXT           "Copyright (C) 2014",IDC_STATIC,40,25,119,8
+    DEFPUSHBUTTON   "OK",IDOK,178,7,50,16,WS_GROUP
+END
+
+IDD_TASKSERVER_DIALOG DIALOGEX 0, 0, 410, 337
+STYLE DS_SETFONT | DS_MODALFRAME | DS_FIXEDSYS | WS_POPUP | WS_VISIBLE | WS_CAPTION | WS_SYSMENU
+EXSTYLE WS_EX_APPWINDOW
+CAPTION "taskServer"
+FONT 8, "MS Shell Dlg", 0, 0, 0x1
+BEGIN
+    DEFPUSHBUTTON   "OK",IDOK,7,314,50,16
+    PUSHBUTTON      "Cancel",IDCANCEL,67,314,50,16
+    EDITTEXT        IDC_EDIT1,217,7,186,323,ES_MULTILINE | ES_AUTOVSCROLL | ES_AUTOHSCROLL | WS_VSCROLL
+    PUSHBUTTON      "Server",IDC_BUTTON1,86,44,50,13
+    PUSHBUTTON      "画圆",IDC_BUTTON2,56,148,50,13
+    PUSHBUTTON      "画方",IDC_BUTTON3,59,185,50,13
+END
+
+IDD_TASKSERVER_DLG DIALOGEX 0, 0, 435, 254
+STYLE DS_SETFONT | DS_FIXEDSYS | WS_MINIMIZEBOX | WS_MAXIMIZEBOX | WS_POPUP | WS_VISIBLE | WS_CAPTION | WS_SYSMENU | WS_THICKFRAME
+EXSTYLE WS_EX_APPWINDOW
+CAPTION "彩色轮胎打印系统--服务器"
+FONT 9, "MS Shell Dlg", 0, 0, 0x1
+BEGIN
+    CONTROL         "",IDC_OUTLOOKBAR,"SysListView32",WS_BORDER | WS_TABSTOP,0,0,53,254
+    CONTROL         "",IDC_DIALOG_AREA,"Static",SS_BLACKFRAME | NOT WS_VISIBLE,54,1,381,253
+END
+
+IDD_PROPPAGE_SERVER_LOG DIALOGEX 0, 0, 324, 216
+STYLE DS_SETFONT | WS_CHILD
+FONT 9, "宋体", 0, 0, 0x0
+BEGIN
+    LISTBOX         IDC_TRACE,0,1,323,214,LBS_OWNERDRAWFIXED | LBS_HASSTRINGS | LBS_NOINTEGRALHEIGHT | WS_VSCROLL | WS_TABSTOP
+END
+
+IDD_PROPPAGE_MACHINE DIALOGEX 0, 0, 264, 211
+STYLE DS_SETFONT | WS_CHILD
+FONT 9, "宋体", 0, 0, 0x0
+BEGIN
+    CONTROL         "",IDC_LIST1,"SysListView32",LVS_REPORT | LVS_SHOWSELALWAYS | WS_BORDER | WS_TABSTOP,0,0,259,206
+END
+
+IDD_PROPPAGE_MACHINEGROUP DIALOGEX 0, 0, 210, 154
+STYLE DS_SETFONT | WS_CHILD | WS_VISIBLE
+FONT 9, "宋体", 0, 0, 0x0
+BEGIN
+    CONTROL         "",IDC_LIST_USER_GROUP,"SysListView32",LVS_REPORT | LVS_ALIGNLEFT | WS_BORDER | WS_TABSTOP,0,2,209,77
+    CONTROL         "",IDC_LIST_GROUP_MEMBER,"SysListView32",LVS_REPORT | LVS_ALIGNLEFT | WS_BORDER | WS_TABSTOP,1,80,208,74
+END
+
+IDD_PROPPAGE_CONFIGURATION DIALOGEX 0, 0, 256, 196
+STYLE DS_SETFONT | WS_CHILD
+FONT 9, "宋体", 0, 0, 0x0
+BEGIN
+    EDITTEXT        IDC_EDIT_PORT,107,2,66,12,ES_AUTOHSCROLL
+    EDITTEXT        IDC_EDIT_PATH,107,23,112,12,ES_AUTOHSCROLL
+    PUSHBUTTON      "浏览...",IDC_BUTTON_BROWSE,222,21,31,14
+    EDITTEXT        IDC_EDIT_TaskID,107,53,66,12,ES_AUTOHSCROLL
+    EDITTEXT        IDC_EDIT_HEART_BEAT_INTERVAL,107,81,66,12,ES_AUTOHSCROLL
+    EDITTEXT        IDC_EDIT_CLIENT_ACK_TIMEOUT,107,108,66,12,ES_AUTOHSCROLL
+    PUSHBUTTON      "应用",IDC_BTN_APPLY,209,177,46,17
+    LTEXT           "端口号：",IDC_STATIC,3,4,34,11
+    LTEXT           "工作进度文件存放路径：",IDC_STATIC,3,31,89,8
+    LTEXT           "打印任务：",IDC_STATIC,3,55,41,8
+    LTEXT           "心跳包间隔时间：\n（单位：分钟）",IDC_STATIC,3,79,79,16
+    LTEXT           "客户心跳响应超时：\n（单位：心跳包）",IDC_STATIC,3,111,73,17
+    LTEXT           "放入内存的任务数的期望值：",IDC_STATIC,3,137,64,19
+    EDITTEXT        IDC_EDIT_JOBGROUP_EXPECTED,107,135,66,12,ES_AUTOHSCROLL
+    LTEXT           "放入内存的任务数的峰值：",IDC_STATIC,3,163,64,21
+    EDITTEXT        IDC_EDIT_JOBGROUP_MAX,107,162,66,12,ES_AUTOHSCROLL
+END
+
+IDD_PROPPAGE_MEMORY_USAGE DIALOGEX 0, 0, 230, 183
+STYLE DS_SETFONT | WS_CHILD | WS_VISIBLE
+FONT 9, "宋体", 0, 0, 0x0
+BEGIN
+    CONTROL         "",IDC_LIST_MEMORY,"SysListView32",LVS_REPORT | LVS_ALIGNLEFT | WS_BORDER | WS_TABSTOP,0,0,229,183
+END
+
+IDD_PROPPAGE_JOBGROUP DIALOGEX 0, 0, 216, 216
+STYLE DS_SETFONT | WS_CHILD | WS_VISIBLE | WS_CLIPSIBLINGS
+FONT 9, "宋体", 0, 0, 0x0
+BEGIN
+    CONTROL         "",IDC_LIST_JOBGROUP,"SysListView32",LVS_REPORT | LVS_ALIGNLEFT | WS_BORDER | WS_TABSTOP,0,1,215,72
+    CONTROL         "",IDC_LIST_JOB,"SysListView32",LVS_REPORT | LVS_ALIGNLEFT | WS_BORDER | WS_TABSTOP,0,79,215,58,WS_EX_STATICEDGE
+    CONTROL         "",IDC_LIST_CUTJOB,"SysListView32",LVS_REPORT | LVS_ALIGNLEFT | WS_BORDER | WS_TABSTOP,0,151,215,63
+END
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// Version
+//
+
+VS_VERSION_INFO VERSIONINFO
+ FILEVERSION 1,0,0,1
+ PRODUCTVERSION 1,0,0,1
+ FILEFLAGSMASK 0x3fL
+#ifdef _DEBUG
+ FILEFLAGS 0x1L
+#else
+ FILEFLAGS 0x0L
+#endif
+ FILEOS 0x4L
+ FILETYPE 0x1L
+ FILESUBTYPE 0x0L
+BEGIN
+    BLOCK "StringFileInfo"
+    BEGIN
+        BLOCK "040904e4"
+        BEGIN
+            VALUE "CompanyName", "TODO: <Company name>"
+            VALUE "FileDescription", "TODO: <File description>"
+            VALUE "FileVersion", "1.0.0.1"
+            VALUE "InternalName", "taskServer.exe"
+            VALUE "LegalCopyright", "TODO: (c) <Company name>.  All rights reserved."
+            VALUE "OriginalFilename", "taskServer.exe"
+            VALUE "ProductName", "TODO: <Product name>"
+            VALUE "ProductVersion", "1.0.0.1"
+        END
+    END
+    BLOCK "VarFileInfo"
+    BEGIN
+        VALUE "Translation", 0x409, 1252
+    END
+END
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// DESIGNINFO
+//
+
+#ifdef APSTUDIO_INVOKED
+GUIDELINES DESIGNINFO 
+BEGIN
+    IDD_ABOUTBOX, DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        RIGHTMARGIN, 228
+        TOPMARGIN, 7
+        BOTTOMMARGIN, 48
+    END
+
+    IDD_TASKSERVER_DIALOG, DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        RIGHTMARGIN, 403
+        TOPMARGIN, 7
+        BOTTOMMARGIN, 330
+    END
+
+    IDD_PROPPAGE_SERVER_LOG, DIALOG
+    BEGIN
+        RIGHTMARGIN, 323
+        BOTTOMMARGIN, 215
+    END
+
+    IDD_PROPPAGE_MACHINE, DIALOG
+    BEGIN
+        RIGHTMARGIN, 210
+        BOTTOMMARGIN, 154
+    END
+
+    IDD_PROPPAGE_CONFIGURATION, DIALOG
+    BEGIN
+        LEFTMARGIN, 3
+        RIGHTMARGIN, 255
+        BOTTOMMARGIN, 194
+    END
+
+    IDD_PROPPAGE_MEMORY_USAGE, DIALOG
+    BEGIN
+        RIGHTMARGIN, 210
+        BOTTOMMARGIN, 154
+    END
+
+    IDD_PROPPAGE_JOBGROUP, DIALOG
+    BEGIN
+        RIGHTMARGIN, 215
+        BOTTOMMARGIN, 214
+    END
+END
+#endif    // APSTUDIO_INVOKED
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// Icon
+//
+
+// Icon with lowest ID value placed first to ensure application icon
+// remains consistent on all systems.
+IDI_CONFIGURATION       ICON                    "res\\configur.ico"
+IDI_ONLINE_USERS        ICON                    "res\\users.ico"
+IDI_LOG                 ICON                    "res\\icon2.ico"
+IDI_LED_RED             ICON                    "res\\led_red.ico"
+IDI_LED_OFF             ICON                    "res\\led_off.ico"
+IDI_LED_GREEN           ICON                    "res\\led_gree.ico"
+IDI_ICON_WARNING        ICON                    "res\\icon3.ico"
+IDI_ICON_MACHINEGROUP      ICON                    "res\\group.ico"
+IDI_ICON_JOBGROUP      ICON                    "res\\FOLDER.ICO"
+IDI_ICON_MEMORY         ICON                    "res\\Memory.ico"
+IDI_ICON_INFO           ICON                    "res\\icon1.ico"
+IDI_ICON_ERROR          ICON                    "res\\ico00001.ico"
+IDI_EMARKSERVER         ICON                    "res\\ftp.ico"
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// Bitmap
+//
+
+IDB_BITMAP_ICON         BITMAP                  "res\\Icon.bmp"
+IDR_TOOLBAR1            BITMAP                  "res\\toolbar1.bmp"
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// Menu
+//
+
+IDR_TRACE_MENU MENU 
+BEGIN
+    POPUP "TRACE"
+    BEGIN
+        MENUITEM "清除所有内容(&Clear)",              ID_TRACE_CLEAR
+    END
+    POPUP "TRACE"
+    BEGIN
+        MENUITEM "清除所有内容(&Clear)",              ID_TRACE_CLEAR
+    END
+END
+
+IDR_INFOBARMENU MENU 
+BEGIN
+    POPUP "iinfobar"
+    BEGIN
+        MENUITEM "服务器日志",                       IDC_VIEW_TRACE
+        MENUITEM "在线用户",                        IDC_VIEW_ONLINE_USERS
+        MENUITEM "用户组",                         ID_VIEW_USER_GROUP
+        MENUITEM "任务状态",                        IDC_VIEW_PAPER_MANAGER
+        MENUITEM "内存状态",                        ID_VIEW_MEMORY_STAT
+        MENUITEM "服务器配置",                       IDC_VIEW_CONFIGURATION
+    END
+END
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// Toolbar
+//
+
+IDR_TOOLBAR1 TOOLBAR  16, 15
+BEGIN
+    BUTTON      ID_SERVER_PRESTART
+    SEPARATOR
+    BUTTON      ID_SERVER_START
+    BUTTON      ID_SERVER_STOP
+    SEPARATOR
+    BUTTON      ID_BUTTON32790
+    SEPARATOR
+    BUTTON      ID_STOP_ALL
+END
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// String Table
+//
+
+STRINGTABLE 
+BEGIN
+    IDS_ABOUTBOX            "&About taskServer..."
+END
+
+STRINGTABLE 
+BEGIN
+    ID_ENDAPP               "message to exit this application"
+END
+
+#endif    // Chinese (P.R.C.) resources
+/////////////////////////////////////////////////////////////////////////////
+
+
+/////////////////////////////////////////////////////////////////////////////
+// English (U.S.) resources
+
+#if !defined(AFX_RESOURCE_DLL) || defined(AFX_TARG_ENU)
+#ifdef _WIN32
+LANGUAGE LANG_ENGLISH, SUBLANG_ENGLISH_US
+#pragma code_page(1252)
+#endif //_WIN32
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// Icon
+//
+
+// Icon with lowest ID value placed first to ensure application icon
+// remains consistent on all systems.
+IDR_MAINFRAME           ICON                    "res\\taskServer.ico"
+
+#ifdef APSTUDIO_INVOKED
+/////////////////////////////////////////////////////////////////////////////
+//
+// TEXTINCLUDE
+//
+
+1 TEXTINCLUDE 
+BEGIN
+    "resource.h\0"
+END
+
+2 TEXTINCLUDE 
+BEGIN
+    "#include ""afxres.h""\r\n"
+    "\0"
+END
+
+3 TEXTINCLUDE 
+BEGIN
+    "#define _AFX_NO_SPLITTER_RESOURCES\r\n"
+    "#define _AFX_NO_OLE_RESOURCES\r\n"
+    "#define _AFX_NO_TRACKER_RESOURCES\r\n"
+    "#define _AFX_NO_PROPERTY_RESOURCES\r\n"
+    "\r\n"
+    "#if !defined(AFX_RESOURCE_DLL) || defined(AFX_TARG_CHS)\r\n"
+    "LANGUAGE 4, 2\r\n"
+    "#pragma code_page(936)\r\n"
+    "#include ""res\\taskServer.rc2""  // non-Microsoft Visual C++ edited resources\r\n"
+    "#include ""afxres.rc""     // Standard components\r\n"
+    "#endif\r\n"
+    "\0"
+END
+
+#endif    // APSTUDIO_INVOKED
+
+#endif    // English (U.S.) resources
+/////////////////////////////////////////////////////////////////////////////
+
+
+
+#ifndef APSTUDIO_INVOKED
+/////////////////////////////////////////////////////////////////////////////
+//
+// Generated from the TEXTINCLUDE 3 resource.
+//
+#define _AFX_NO_SPLITTER_RESOURCES
+#define _AFX_NO_OLE_RESOURCES
+#define _AFX_NO_TRACKER_RESOURCES
+#define _AFX_NO_PROPERTY_RESOURCES
+
+#if !defined(AFX_RESOURCE_DLL) || defined(AFX_TARG_CHS)
+LANGUAGE 4, 2
+#pragma code_page(936)
+#include "res\taskServer.rc2"  // non-Microsoft Visual C++ edited resources
+#include "afxres.rc"     // Standard components
+#endif
+
+/////////////////////////////////////////////////////////////////////////////
+#endif    // not APSTUDIO_INVOKED
+

@@ -1,0 +1,814 @@
+// Microsoft Visual C++ generated resource script.
+//
+#include "resource.h"
+
+#define APSTUDIO_READONLY_SYMBOLS
+/////////////////////////////////////////////////////////////////////////////
+//
+// Generated from the TEXTINCLUDE 2 resource.
+//
+#include "afxres.h"
+
+/////////////////////////////////////////////////////////////////////////////
+#undef APSTUDIO_READONLY_SYMBOLS
+
+/////////////////////////////////////////////////////////////////////////////
+// Chinese (Neutral) resources
+
+#if !defined(AFX_RESOURCE_DLL) || defined(AFX_TARG_CHS)
+#ifdef _WIN32
+LANGUAGE LANG_CHINESE, SUBLANG_NEUTRAL
+#pragma code_page(936)
+#endif //_WIN32
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// Dialog
+//
+
+IDD_CONTROLCLIENT_DIALOG DIALOGEX 0, 0, 656, 298
+STYLE DS_SETFONT | DS_FIXEDSYS | DS_CENTER | WS_POPUP | WS_VISIBLE | WS_BORDER
+FONT 8, "MS Shell Dlg", 0, 0, 0x1
+BEGIN
+    CONTROL         "",IDC_LIST_DEVICE,"SysListView32",LVS_REPORT | LVS_SINGLESEL | LVS_SHOWSELALWAYS | LVS_ALIGNLEFT | WS_BORDER | WS_TABSTOP,7,7,105,143
+    CONTROL         "",IDC_LIST_JET,"SysListView32",LVS_REPORT | LVS_SHOWSELALWAYS | LVS_ALIGNLEFT | WS_BORDER | WS_TABSTOP,123,7,104,143
+    PUSHBUTTON      "??",IDC_BUTTON1,262,20,50,14
+    CONTROL         "",IDC_LIST_OUTPUT,"SysListView32",LVS_REPORT | LVS_ALIGNLEFT | WS_BORDER | WS_TABSTOP,509,7,140,287
+    PUSHBUTTON      "????",IDC_BUTTON2,262,55,50,14
+    CONTROL         "",IDC_PIC,"Static",SS_BLACKFRAME,329,25,160,198
+    PUSHBUTTON      "????",IDC_BUTTON3,264,90,50,14
+    CONTROL         "",IDC_LIST_TASK,"SysListView32",LVS_REPORT | LVS_SHOWSELALWAYS | LVS_ALIGNLEFT | WS_BORDER | WS_TABSTOP,85,152,127,146
+    PUSHBUTTON      "????",IDC_BUTTON4,7,173,50,14
+    PUSHBUTTON      "??",IDC_BUTTON5,7,206,50,14
+END
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// DESIGNINFO
+//
+
+#ifdef APSTUDIO_INVOKED
+GUIDELINES DESIGNINFO 
+BEGIN
+    IDD_CONTROLCLIENT_DIALOG, DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        RIGHTMARGIN, 649
+        TOPMARGIN, 7
+    END
+END
+#endif    // APSTUDIO_INVOKED
+
+#endif    // Chinese (Neutral) resources
+/////////////////////////////////////////////////////////////////////////////
+
+
+/////////////////////////////////////////////////////////////////////////////
+// Chinese (P.R.C.) resources
+
+#if !defined(AFX_RESOURCE_DLL) || defined(AFX_TARG_CHS)
+#ifdef _WIN32
+LANGUAGE LANG_CHINESE, SUBLANG_CHINESE_SIMPLIFIED
+#pragma code_page(936)
+#endif //_WIN32
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// Dialog
+//
+
+IDD_ABOUTBOX DIALOGEX 0, 0, 235, 55
+STYLE DS_SETFONT | DS_MODALFRAME | DS_FIXEDSYS | WS_POPUP | WS_CAPTION | WS_SYSMENU
+CAPTION "关于 jetManager"
+FONT 9, "MS Shell Dlg", 0, 0, 0x1
+BEGIN
+    ICON            IDR_MAINFRAME,IDC_STATIC,11,17,20,20
+    LTEXT           "jetManager Version 1.0",IDC_STATIC,40,10,119,8,SS_NOPREFIX
+    LTEXT           "Copyright (C) 2014",IDC_STATIC,40,25,119,8
+    DEFPUSHBUTTON   "确定",IDOK,178,7,50,16,WS_GROUP
+END
+
+IDR_MAINFRAME DIALOGEX 0, 0, 330, 16
+STYLE DS_SETFONT | DS_FIXEDSYS | WS_CHILD
+FONT 9, "MS Shell Dlg", 0, 0, 0x1
+BEGIN
+    LTEXT           "TODO: 布局对话栏",IDC_STATIC,12,4,300,8
+END
+
+IDD_FORMVIEW DIALOGEX 0, 0, 125, 369
+STYLE DS_SETFONT | WS_CHILD | WS_BORDER
+FONT 11, "新宋体", 400, 0, 0x0
+BEGIN
+    EDITTEXT        IDC_USERNAME,31,19,88,13,ES_AUTOHSCROLL
+    EDITTEXT        IDC_PASSWARD,9,10,88,13,ES_PASSWORD | ES_AUTOHSCROLL
+    EDITTEXT        IDC_MACHINE,33,125,44,14,ES_AUTOHSCROLL | NOT WS_VISIBLE
+    CONTROL         "",ID_HIDEDLG_OR_NOT,"Button",BS_OWNERDRAW | WS_TABSTOP,100,35,21,13
+    PUSHBUTTON      "取消",IDCANCEL,23,222,50,14,NOT WS_VISIBLE
+    DEFPUSHBUTTON   "确定",IDOK,17,190,50,14,NOT WS_VISIBLE
+    LTEXT           "打印栏",IDC_STATIC_CONNECTDB,53,7,34,8
+    GROUPBOX        "IDC_STATIC_COMMENT0",IDC_STATIC_COMMENT0,20,254,72,47
+    COMBOBOX        IDC_NUM,12,62,104,106,CBS_DROPDOWN | WS_VSCROLL | WS_TABSTOP
+    LTEXT           "IDC_STATIC_COMMENT1",IDC_STATIC_COMMENT1,45,304,80,9
+    LTEXT           "IDC_STATIC_COMMENT2",IDC_STATIC_COMMENT2,45,313,80,9
+    EDITTEXT        IDC_SERVERADDRESS,21,85,66,13,ES_AUTOHSCROLL
+    LTEXT           "IDC_STATIC_COMMENT3",IDC_STATIC_COMMENT3,45,322,79,8
+    EDITTEXT        IDC_PORT,22,107,35,13,ES_AUTOHSCROLL | NOT WS_VISIBLE
+    LTEXT           "IDC_STATIC_COMMENT4",IDC_STATIC_COMMENT4,45,356,79,8
+    LTEXT           "当前已完成job数：",IDC_STATIC_MARKED,5,166,114,9
+    LTEXT           "",IDC_CURRENTNUM,5,45,114,8
+END
+
+IDD_PAUSEWORK DIALOGEX 0, 0, 155, 29
+STYLE DS_SETFONT | DS_MODALFRAME | WS_POPUP | WS_CAPTION
+CAPTION "请稍后..."
+FONT 18, "宋体", 400, 0, 0x0
+BEGIN
+    DEFPUSHBUTTON   "确定",IDOK,98,7,50,14,NOT WS_VISIBLE
+    PUSHBUTTON      "取消",IDCANCEL,98,8,50,14,NOT WS_VISIBLE
+    LTEXT           "正在下载文件，请稍后......",IDC_STATIC,19,8,122,14
+END
+
+IDD_DIALOG_PWDMODIFY DIALOGEX 0, 0, 195, 162
+STYLE DS_SETFONT | DS_MODALFRAME | DS_FIXEDSYS | WS_POPUP | WS_CAPTION | WS_SYSMENU
+CAPTION "更执行用户密码"
+FONT 8, "MS Shell Dlg", 400, 0, 0x1
+BEGIN
+    DEFPUSHBUTTON   "确定",IDOK,37,136,50,14
+    PUSHBUTTON      "取消",IDCANCEL,112,136,50,14
+    LTEXT           "老密码：",IDC_STATIC,7,60,47,8
+    LTEXT           "新密码：",IDC_STATIC,7,84,33,8
+    LTEXT           "重新输入新密码：",IDC_STATIC,7,108,65,8
+    EDITTEXT        IDC_EDIT1,83,58,95,14,ES_PASSWORD | ES_AUTOHSCROLL
+    EDITTEXT        IDC_EDIT2,83,82,95,14,ES_PASSWORD | ES_AUTOHSCROLL
+    EDITTEXT        IDC_EDIT3,83,106,95,14,ES_PASSWORD | ES_AUTOHSCROLL
+    LTEXT           "账号：",IDC_STATIC,7,12,25,8
+    LTEXT           "用户名：",IDC_STATIC,7,36,33,8
+    EDITTEXT        IDC_EDIT_ACCOUNT,83,13,95,14,ES_AUTOHSCROLL
+    EDITTEXT        IDC_EDIT_USER_NAME,83,35,95,14,ES_AUTOHSCROLL
+END
+
+IDD_DIALOG_SEND_NOTIFY DIALOGEX 0, 0, 211, 147
+STYLE DS_SETFONT | DS_MODALFRAME | DS_FIXEDSYS | WS_POPUP | WS_CAPTION | WS_SYSMENU
+CAPTION "请输入判语"
+FONT 8, "MS Shell Dlg", 400, 0, 0x1
+BEGIN
+    DEFPUSHBUTTON   "确定",IDOK,33,125,50,14
+    PUSHBUTTON      "取消",IDCANCEL,123,126,50,14
+    LTEXT           "请输入（可以不输入）：",IDC_STATIC,11,10,93,10
+    EDITTEXT        IDC_EDIT1,15,24,179,92,ES_MULTILINE | ES_AUTOVSCROLL | ES_AUTOHSCROLL | ES_WANTRETURN,WS_EX_LEFTSCROLLBAR
+END
+
+IDD_AUTO_TESTING DIALOGEX 0, 0, 186, 79
+STYLE DS_SETFONT | DS_MODALFRAME | DS_FIXEDSYS | WS_POPUP | WS_CAPTION | WS_SYSMENU
+CAPTION "输入自动测试的时间间隔"
+FONT 8, "MS Shell Dlg", 400, 0, 0x1
+BEGIN
+    DEFPUSHBUTTON   "确定",IDOK,27,58,50,14
+    PUSHBUTTON      "取消",IDCANCEL,110,58,50,14
+    LTEXT           "时间单位：毫秒(1/1000秒)",IDC_STATIC,48,41,95,11
+    EDITTEXT        IDC_TIME_INTERVAL,48,15,88,17,ES_AUTOHSCROLL
+END
+
+IDD_DLG_OPERATOR DIALOGEX 0, 0, 498, 349
+STYLE DS_SETFONT | DS_FIXEDSYS | DS_CENTER | WS_POPUP | WS_VISIBLE | WS_BORDER
+FONT 8, "MS Shell Dlg", 400, 0, 0x1
+BEGIN
+    DEFPUSHBUTTON   "退  出",IDOK,429,328,50,14
+    PUSHBUTTON      "更新信息",IDCANCEL,340,328,50,14
+    PUSHBUTTON      "全部下线",IDC_BTN_ALL_LOGOUT,1,329,58,13
+END
+
+IDD_PROPPAGE_TASKS DIALOGEX 0, 0, 495, 343
+STYLE DS_SETFONT | WS_CHILD | WS_VISIBLE
+FONT 9, "宋体", 400, 0, 0x86
+BEGIN
+    CONTROL         "",IDC_LIST_TASKS,"SysListView32",LVS_REPORT | LVS_ALIGNLEFT | WS_BORDER | WS_TABSTOP,0,0,209,71
+    CONTROL         "",IDC_LIST_JOB_MACHINE,"SysListView32",LVS_REPORT | LVS_ALIGNLEFT | WS_BORDER | WS_TABSTOP,2,72,208,68
+END
+
+IDD_DLG_PREPRINTING DIALOGEX 0, 0, 436, 311
+STYLE DS_SETFONT | DS_FIXEDSYS | DS_CENTER | WS_POPUP | WS_VISIBLE | WS_BORDER
+FONT 8, "MS Shell Dlg", 400, 0, 0x1
+BEGIN
+    DEFPUSHBUTTON   "确定",IDOK,316,290,50,14
+    PUSHBUTTON      "取消",IDCANCEL,379,290,50,14
+    EDITTEXT        IDC_EDIT1,7,37,50,236,ES_RIGHT | ES_MULTILINE | ES_AUTOHSCROLL | ES_READONLY | NOT WS_BORDER | WS_VSCROLL | NOT WS_TABSTOP,WS_EX_STATICEDGE
+    EDITTEXT        IDC_EDIT2,59,37,50,236,ES_RIGHT | ES_MULTILINE | ES_AUTOHSCROLL | ES_READONLY | NOT WS_BORDER | WS_VSCROLL | NOT WS_TABSTOP,WS_EX_STATICEDGE
+    EDITTEXT        IDC_EDIT_MSG1,7,7,209,18,ES_AUTOHSCROLL | ES_READONLY | NOT WS_BORDER,WS_EX_STATICEDGE
+    EDITTEXT        IDC_EDIT_MSG2,220,7,209,18,ES_AUTOHSCROLL | ES_READONLY | NOT WS_BORDER,WS_EX_STATICEDGE
+    EDITTEXT        IDC_EDIT3,111,37,50,236,ES_RIGHT | ES_MULTILINE | ES_AUTOHSCROLL | ES_READONLY | NOT WS_BORDER | WS_VSCROLL | NOT WS_TABSTOP,WS_EX_STATICEDGE
+    EDITTEXT        IDC_EDIT4,163,37,50,236,ES_RIGHT | ES_MULTILINE | ES_AUTOHSCROLL | ES_READONLY | NOT WS_BORDER | WS_VSCROLL | NOT WS_TABSTOP,WS_EX_STATICEDGE
+    EDITTEXT        IDC_EDIT6,267,37,50,236,ES_RIGHT | ES_MULTILINE | ES_AUTOHSCROLL | ES_READONLY | NOT WS_BORDER | WS_VSCROLL | NOT WS_TABSTOP,WS_EX_STATICEDGE
+    EDITTEXT        IDC_EDIT5,215,37,50,236,ES_RIGHT | ES_MULTILINE | ES_AUTOHSCROLL | ES_READONLY | NOT WS_BORDER | WS_VSCROLL | NOT WS_TABSTOP,WS_EX_STATICEDGE
+    EDITTEXT        IDC_EDIT7,319,37,50,236,ES_RIGHT | ES_MULTILINE | ES_AUTOHSCROLL | ES_READONLY | NOT WS_BORDER | WS_VSCROLL | NOT WS_TABSTOP,WS_EX_STATICEDGE
+    EDITTEXT        IDC_EDIT8,371,37,50,236,ES_RIGHT | ES_MULTILINE | ES_AUTOHSCROLL | ES_READONLY | NOT WS_BORDER | WS_VSCROLL | NOT WS_TABSTOP,WS_EX_STATICEDGE
+    PUSHBUTTON      "<==",IDC_BTN_LEFT,7,290,50,14
+    PUSHBUTTON      "==>",IDC_BTN_RIGHT,158,290,50,14
+    EDITTEXT        IDC_EDIT_POS,59,290,97,14,ES_CENTER | ES_AUTOHSCROLL | ES_READONLY | NOT WS_BORDER | NOT WS_TABSTOP,WS_EX_STATICEDGE
+    PUSHBUTTON      "请求正式打印",IDC_NORMAL,231,290,53,14
+END
+
+IDD_DLG_CONTROL DIALOGEX 0, 0, 494, 423
+STYLE DS_SETFONT | DS_MODALFRAME | DS_FIXEDSYS | WS_POPUP | WS_CAPTION | WS_SYSMENU
+CAPTION "信息统计"
+FONT 8, "MS Shell Dlg", 400, 0, 0x1
+BEGIN
+    DEFPUSHBUTTON   "确定",IDOK,291,409,50,14
+    PUSHBUTTON      "取消",IDCANCEL,352,408,50,14,NOT WS_VISIBLE
+    CONTROL         "",IDC_TAB,"SysTabControl32",0x0,0,18,493,300
+END
+
+IDD_DLG_MSG DIALOGEX 0, 0, 193, 38
+STYLE DS_SETFONT | DS_MODALFRAME | DS_FIXEDSYS | WS_POPUP | WS_VISIBLE | WS_CAPTION
+EXSTYLE WS_EX_NOPARENTNOTIFY | WS_EX_TOOLWINDOW
+CAPTION "当前job的作业"
+FONT 8, "MS Shell Dlg", 400, 0, 0x1
+BEGIN
+    CONTROL         "Button1",IDC_MSG1,"Button",BS_OWNERDRAW | WS_TABSTOP,1,1,191,11
+    CONTROL         "Button1",IDC_MSG2,"Button",BS_OWNERDRAW | WS_TABSTOP,1,13,191,11
+    CONTROL         "Button1",IDC_MSG3,"Button",BS_OWNERDRAW | WS_TABSTOP,1,25,191,11
+END
+
+IDD_DLG_PASSWORD DIALOGEX 0, 0, 255, 127
+STYLE DS_SETFONT | DS_MODALFRAME | DS_FIXEDSYS | WS_POPUP | WS_CAPTION | WS_SYSMENU
+CAPTION "请输入密码"
+FONT 8, "MS Shell Dlg", 400, 0, 0x1
+BEGIN
+    DEFPUSHBUTTON   "确定",IDOK,35,106,50,14
+    PUSHBUTTON      "取消",IDCANCEL,173,106,50,14
+    EDITTEXT        IDC_EDIT_PASSWORD,48,50,163,14,ES_PASSWORD | ES_AUTOHSCROLL
+    EDITTEXT        IDC_EDIT_MSG,21,23,159,14,ES_AUTOHSCROLL | ES_READONLY | NOT WS_BORDER
+END
+
+IDD_DLG_QUALITY DIALOGEX 0, 0, 532, 377
+STYLE DS_SETFONT | DS_MODALFRAME | DS_FIXEDSYS | DS_CENTER | WS_POPUP | WS_CAPTION
+CAPTION "打印质量波动图"
+FONT 8, "MS Shell Dlg", 400, 0, 0x1
+BEGIN
+    DEFPUSHBUTTON   "确定",IDOK,387,356,50,14
+    PUSHBUTTON      "取消",IDCANCEL,475,356,50,14
+    PUSHBUTTON      "<==",IDC_BTN_LEFT,7,356,50,14
+    PUSHBUTTON      "==>",IDC_BTN_RIGHT,158,356,50,14
+    EDITTEXT        IDC_EDIT_POS,59,356,97,14,ES_CENTER | ES_AUTOHSCROLL | ES_READONLY | NOT WS_BORDER | NOT WS_TABSTOP,WS_EX_STATICEDGE
+    EDITTEXT        IDC_EDIT_MSG1,7,7,248,18,ES_AUTOHSCROLL | ES_READONLY | NOT WS_BORDER,WS_EX_STATICEDGE
+    EDITTEXT        IDC_EDIT_MSG2,277,7,248,18,ES_AUTOHSCROLL | ES_READONLY | NOT WS_BORDER,WS_EX_STATICEDGE
+    CONTROL         "",IDC_QUALITY_PIC,"Static",SS_BLACKFRAME,7,28,518,269
+    CONTROL         "Machine",IDC_BTN_Machine1,"Button",BS_OWNERDRAW | WS_TABSTOP,7,303,63,16
+    CONTROL         "Machine",IDC_BTN_Machine2,"Button",BS_OWNERDRAW | WS_TABSTOP,7,325,63,16
+    CONTROL         "Machine",IDC_BTN_Machine3,"Button",BS_OWNERDRAW | WS_TABSTOP,72,303,63,16
+    CONTROL         "Machine",IDC_BTN_Machine4,"Button",BS_OWNERDRAW | WS_TABSTOP,72,325,63,16
+    CONTROL         "Machine",IDC_BTN_Machine5,"Button",BS_OWNERDRAW | WS_TABSTOP,137,303,63,16
+    CONTROL         "Machine",IDC_BTN_Machine6,"Button",BS_OWNERDRAW | WS_TABSTOP,137,325,63,16
+    CONTROL         "Machine",IDC_BTN_Machine7,"Button",BS_OWNERDRAW | WS_TABSTOP,202,303,63,16
+    CONTROL         "Machine",IDC_BTN_Machine8,"Button",BS_OWNERDRAW | WS_TABSTOP,202,325,63,16
+    CONTROL         "Machine",IDC_BTN_Machine9,"Button",BS_OWNERDRAW | WS_TABSTOP,267,303,63,16
+    CONTROL         "Machine",IDC_BTN_Machine10,"Button",BS_OWNERDRAW | WS_TABSTOP,267,325,63,16
+    CONTROL         "Machine",IDC_BTN_Machine11,"Button",BS_OWNERDRAW | WS_TABSTOP,332,303,63,16
+    CONTROL         "Machine",IDC_BTN_Machine12,"Button",BS_OWNERDRAW | WS_TABSTOP,332,325,63,16
+    CONTROL         "Machine",IDC_BTN_Machine13,"Button",BS_OWNERDRAW | WS_TABSTOP,397,303,63,16
+    CONTROL         "Machine",IDC_BTN_Machine14,"Button",BS_OWNERDRAW | WS_TABSTOP,397,325,63,16
+    CONTROL         "Machine",IDC_BTN_Machine15,"Button",BS_OWNERDRAW | WS_TABSTOP,462,303,63,16
+    CONTROL         "Machine",IDC_BTN_Machine16,"Button",BS_OWNERDRAW | WS_TABSTOP,462,325,63,16
+END
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// DESIGNINFO
+//
+
+#ifdef APSTUDIO_INVOKED
+GUIDELINES DESIGNINFO 
+BEGIN
+    IDD_ABOUTBOX, DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        RIGHTMARGIN, 228
+        TOPMARGIN, 7
+        BOTTOMMARGIN, 48
+    END
+
+    IDD_FORMVIEW, DIALOG
+    BEGIN
+        LEFTMARGIN, 5
+        TOPMARGIN, 7
+        BOTTOMMARGIN, 360
+    END
+
+    IDD_PAUSEWORK, DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        RIGHTMARGIN, 148
+        TOPMARGIN, 7
+        BOTTOMMARGIN, 22
+    END
+
+    IDD_DIALOG_PWDMODIFY, DIALOG
+    BEGIN
+        LEFTMARGIN, 4
+        RIGHTMARGIN, 190
+        TOPMARGIN, 4
+        BOTTOMMARGIN, 155
+    END
+
+    IDD_DIALOG_SEND_NOTIFY, DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        RIGHTMARGIN, 204
+        TOPMARGIN, 7
+        BOTTOMMARGIN, 140
+    END
+
+    IDD_AUTO_TESTING, DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        RIGHTMARGIN, 179
+        TOPMARGIN, 7
+        BOTTOMMARGIN, 72
+    END
+
+    IDD_DLG_OPERATOR, DIALOG
+    BEGIN
+        RIGHTMARGIN, 491
+        BOTTOMMARGIN, 342
+    END
+
+    IDD_PROPPAGE_TASKS, DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        RIGHTMARGIN, 488
+        TOPMARGIN, 7
+        BOTTOMMARGIN, 336
+    END
+
+    IDD_DLG_PREPRINTING, DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        RIGHTMARGIN, 429
+        TOPMARGIN, 7
+        BOTTOMMARGIN, 304
+    END
+
+    IDD_DLG_CONTROL, DIALOG
+    BEGIN
+        RIGHTMARGIN, 478
+    END
+
+    IDD_DLG_MSG, DIALOG
+    BEGIN
+        RIGHTMARGIN, 192
+        BOTTOMMARGIN, 37
+    END
+
+    IDD_DLG_PASSWORD, DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        RIGHTMARGIN, 248
+        TOPMARGIN, 7
+        BOTTOMMARGIN, 120
+    END
+
+    IDD_DLG_QUALITY, DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        RIGHTMARGIN, 525
+        TOPMARGIN, 7
+        BOTTOMMARGIN, 370
+    END
+END
+#endif    // APSTUDIO_INVOKED
+
+
+#ifdef APSTUDIO_INVOKED
+/////////////////////////////////////////////////////////////////////////////
+//
+// TEXTINCLUDE
+//
+
+1 TEXTINCLUDE 
+BEGIN
+    "resource.h\0"
+END
+
+2 TEXTINCLUDE 
+BEGIN
+    "#include ""afxres.h""\r\n"
+    "\0"
+END
+
+3 TEXTINCLUDE 
+BEGIN
+    "#define _AFX_NO_OLE_RESOURCES\r\n"
+    "#define _AFX_NO_TRACKER_RESOURCES\r\n"
+    "#define _AFX_NO_PROPERTY_RESOURCES\r\n"
+    "\r\n"
+    "#if !defined(AFX_RESOURCE_DLL) || defined(AFX_TARG_CHS)\r\n"
+    "LANGUAGE 4, 2\r\n"
+    "#pragma code_page(936)\r\n"
+    "#include ""res\\jetManager.rc2""  // ???????§???????§??? Microsoft Visual C++ ???????ì???????¨??????¨????????¨?????????§???????§???-???????ì???????¨??|??????¨???o???\r\n"
+    "#include ""afxres.rc""         // ???????ì???????¨??????¨????????¨???o???????ì???????¨??|????????ì???????¨??|??????¨???|?t\r\n"
+    "#include ""afxprint.rc""       // ????????¨???????????¨?????/????????¨???????????¨?????????????ì????????ì????????¨?????????§???????§????????¨?????????§???????§?????????ì???????¨??|??????¨???o???\r\n"
+    "#endif\r\n"
+    "\0"
+END
+
+#endif    // APSTUDIO_INVOKED
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// Icon
+//
+
+// Icon with lowest ID value placed first to ensure application icon
+// remains consistent on all systems.
+IDR_MAINFRAME           ICON                    "res\\jetManager.ico"
+IDR_JET_MANAGERTYPE     ICON                    "res\\jetManagerDoc.ico"
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// Bitmap
+//
+
+IDR_MAINFRAME           BITMAP                  "res\\Toolbar.bmp"
+IDR_FULLSCREEN          BITMAP                  "res\\toolbar1.bmp"
+IDB_NAILUP              BITMAP                  "res\\Pins.bmp"
+IDR_TOOLBAR2            BITMAP                  "res\\toolbar2.bmp"
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// Toolbar
+//
+
+IDR_MAINFRAME TOOLBAR  30, 30
+BEGIN
+    BUTTON      ID_VIEW_FULLSCREEN
+    SEPARATOR
+    BUTTON      ID_DRAWSCRIPT_OR_NOT
+    SEPARATOR
+    BUTTON      ID_VIEW_ZOOMIN
+    BUTTON      ID_VIEW_ZOOMOUT
+    SEPARATOR
+    BUTTON      ID_EDIT_UNDO
+    SEPARATOR
+    BUTTON      ID_APP_ABOUT
+    BUTTON      ID_CONTEXT_HELP
+END
+
+IDR_FULLSCREEN TOOLBAR  30, 30
+BEGIN
+    BUTTON      ID_VIEW_FULLSCREEN
+    SEPARATOR
+    BUTTON      ID_DRAWSCRIPT_OR_NOT
+    SEPARATOR
+    BUTTON      ID_VIEW_ZOOMIN
+    BUTTON      ID_VIEW_ZOOMOUT
+    SEPARATOR
+    BUTTON      ID_EDIT_UNDO
+END
+
+IDR_TOOLBAR2 TOOLBAR  31, 30
+BEGIN
+    BUTTON      ID_FILE_PRINT
+    BUTTON      ID_FILE_OPEN
+END
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// Menu
+//
+
+IDR_MAINFRAME MENU 
+BEGIN
+    POPUP "命令(&D)"
+    BEGIN
+        MENUITEM "注销",                          ID_COMMAND_LOGOUT
+        MENUITEM "修执行用户密码",                     ID_COMMAND_MODIFYPWD
+        MENUITEM "发送通知",                        ID_COMMAND_NOTIFY
+        MENUITEM "提交打印结果",                      ID_COMMAND_SUBMITJOB
+        MENUITEM SEPARATOR
+        MENUITEM "退出(&X)",                      ID_APP_EXIT
+    END
+    POPUP "编辑(&E)"
+    BEGIN
+        MENUITEM "撤消\tCtrl+Z(&U)",              ID_EDIT_UNDO
+        MENUITEM SEPARATOR
+        MENUITEM "剪切\tCtrl+X(&T)",              ID_EDIT_CUT
+        MENUITEM "复制\tCtrl+C(&C)",              ID_EDIT_COPY
+        MENUITEM "粘贴\tCtrl+V(&P)",              ID_EDIT_PASTE
+        MENUITEM SEPARATOR
+    END
+    POPUP "视图(&V)"
+    BEGIN
+        MENUITEM "工具栏(&T)",                     ID_VIEW_TOOLBAR
+        MENUITEM "状态栏(&S)",                     ID_VIEW_STATUS_BAR
+        MENUITEM "拆分(&P)",                      ID_WINDOW_SPLIT
+        MENUITEM SEPARATOR
+        MENUITEM "放大(&O)",                      ID_VIEW_ZOOMIN
+        MENUITEM "缩小(&I)",                      ID_VIEW_ZOOMOUT
+    END
+    POPUP "帮助(&H)"
+    BEGIN
+        MENUITEM "帮助主题(&H)",                    ID_HELP_FINDER
+        MENUITEM SEPARATOR
+        MENUITEM "关于 jetManager(&A)...",        ID_APP_ABOUT
+        MENUITEM "自动测试",                        ID_AUTO_TESTING
+    END
+    POPUP "管理(&O)"
+    BEGIN
+        MENUITEM "打印进展（&P）",                    ID_OPERATOR
+        MENUITEM "质量波动（&Q）",                    ID_QUALITY
+        MENUITEM SEPARATOR
+        MENUITEM "试执行结果（&R）",                   ID_RESULT_PREPRINTING
+        MENUITEM "管理(&C)",                      ID_CONTROL
+    END
+    POPUP "操作(&P)"
+    BEGIN
+        MENUITEM "踢除",                          IDC_USER_KICKOUT
+        MENUITEM "回收",                          IDC_USER_RECYCLE
+    END
+END
+
+IDR_MENU_NETWORK MENU 
+BEGIN
+    POPUP "文件(&F)"
+    BEGIN
+        MENUITEM "新建\tCtrl+N(&N)",              ID_FILE_NEW
+        MENUITEM "打开...\tCtrl+O(&O)",           ID_FILE_OPEN
+        MENUITEM "保存\tCtrl+S(&S)",              ID_FILE_SAVE
+        MENUITEM "另存为(&A)...",                  ID_FILE_SAVE_AS
+        MENUITEM SEPARATOR
+        MENUITEM "打印...\tCtrl+P(&P)",           ID_FILE_PRINT
+        MENUITEM "打印预览(&V)",                    ID_FILE_PRINT_PREVIEW
+        MENUITEM "打印设置(&R)...",                 ID_FILE_PRINT_SETUP
+        MENUITEM SEPARATOR
+        MENUITEM "最近的文件",                       ID_FILE_MRU_FILE1, GRAYED
+    END
+    POPUP "网络线程"
+    BEGIN
+        MENUITEM "初始化",                         WM_NETWORK_INITIATE
+        MENUITEM "终止线程",                        WM_NETWORK_TERMINATE
+        MENUITEM "连接服务器",                       WM_NETWORK_CONNECT
+        MENUITEM "登陆服务器",                       WM_NETWORK_LOGON
+        MENUITEM "发送ScoreDlg的HWND",             WM_SCOREDLG_HWND
+    END
+END
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// Accelerator
+//
+
+IDR_MAINFRAME ACCELERATORS 
+BEGIN
+    VK_F1,          ID_CONTEXT_HELP,        VIRTKEY, SHIFT, NOINVERT
+    "C",            ID_EDIT_COPY,           VIRTKEY, CONTROL, NOINVERT
+    VK_INSERT,      ID_EDIT_COPY,           VIRTKEY, CONTROL, NOINVERT
+    VK_DELETE,      ID_EDIT_CUT,            VIRTKEY, SHIFT, NOINVERT
+    "X",            ID_EDIT_CUT,            VIRTKEY, CONTROL, NOINVERT
+    "V",            ID_EDIT_PASTE,          VIRTKEY, CONTROL, NOINVERT
+    VK_INSERT,      ID_EDIT_PASTE,          VIRTKEY, SHIFT, NOINVERT
+    VK_BACK,        ID_EDIT_UNDO,           VIRTKEY, ALT, NOINVERT
+    "Z",            ID_EDIT_UNDO,           VIRTKEY, CONTROL, NOINVERT
+    "N",            ID_FILE_NEW,            VIRTKEY, CONTROL, NOINVERT
+    "O",            ID_FILE_OPEN,           VIRTKEY, CONTROL, NOINVERT
+    "P",            ID_FILE_PRINT,          VIRTKEY, CONTROL, NOINVERT
+    "S",            ID_FILE_SAVE,           VIRTKEY, CONTROL, NOINVERT
+    VK_F1,          ID_HELP,                VIRTKEY, NOINVERT
+    VK_DOWN,        ID_KEY_DOWN,            VIRTKEY, NOINVERT
+    VK_UP,          ID_KEY_UP,              VIRTKEY, NOINVERT
+    VK_F6,          ID_NEXT_PANE,           VIRTKEY, NOINVERT
+    VK_F6,          ID_PREV_PANE,           VIRTKEY, SHIFT, NOINVERT
+END
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// Version
+//
+
+VS_VERSION_INFO VERSIONINFO
+ FILEVERSION 1,0,0,1
+ PRODUCTVERSION 1,0,0,1
+ FILEFLAGSMASK 0x3fL
+#ifdef _DEBUG
+ FILEFLAGS 0x1L
+#else
+ FILEFLAGS 0x0L
+#endif
+ FILEOS 0x4L
+ FILETYPE 0x1L
+ FILESUBTYPE 0x0L
+BEGIN
+    BLOCK "StringFileInfo"
+    BEGIN
+        BLOCK "080403a8"
+        BEGIN
+            VALUE "CompanyName", "TODO: <公司名>"
+            VALUE "FileDescription", "TODO: <文件说明>"
+            VALUE "FileVersion", "1.0.0.1"
+            VALUE "InternalName", "jetManager.exe"
+            VALUE "LegalCopyright", "TODO: (C) <公司名>。保留所有权利。"
+            VALUE "OriginalFilename", "jetManager.exe"
+            VALUE "ProductName", "TODO: <产品名>"
+            VALUE "ProductVersion", "1.0.0.1"
+        END
+    END
+    BLOCK "VarFileInfo"
+    BEGIN
+        VALUE "翻译", 0x804, 936
+    END
+END
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// Cursor
+//
+
+IDC_HANDCUR             CURSOR                  "res\\cursor1.cur"
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// String Table
+//
+
+STRINGTABLE 
+BEGIN
+    IDR_MAINFRAME           "彩色轮胎打印系统管理程序\n\njetManager\n\n\njetManager.Document\njetManager.Document"
+END
+
+STRINGTABLE 
+BEGIN
+    IDS_CANNOT_CONNECT      "无法连接到服务器！\n\n请按如下步骤排除故障\n  1)确认服务器的 IP地址和端口是否填写正确\n  2)网络是否连接正常"
+    WM_SERVER_NEWSTATE      "服务器状态执行变\n新状态"
+END
+
+STRINGTABLE 
+BEGIN
+    AFX_IDS_APP_TITLE       "jetManager"
+    AFX_IDS_IDLEMESSAGE     "若要获取帮助，请按 F1"
+    AFX_IDS_HELPMODEMESSAGE "选择要获取其帮助信息的对象"
+END
+
+STRINGTABLE 
+BEGIN
+    ID_INDICATOR_EXT        "EXT"
+    ID_INDICATOR_CAPS       "CAP"
+    ID_INDICATOR_NUM        "NUM"
+    ID_INDICATOR_SCRL       "SCRL"
+    ID_INDICATOR_OVR        "OVR"
+    ID_INDICATOR_REC        "REC"
+END
+
+STRINGTABLE 
+BEGIN
+    ID_FILE_NEW             "创建新文档\n新建"
+    ID_FILE_OPEN            "打开现有文档\n打开"
+    ID_FILE_CLOSE           "关闭活动文档\n关闭"
+    ID_FILE_SAVE            "保存活动文档\n保存"
+    ID_FILE_SAVE_AS         "用新名称保存活动文档\n另存为"
+    ID_FILE_PAGE_SETUP      "更执行打印选项\n页面设置"
+    ID_FILE_PRINT_SETUP     "更执行打印机选项和打印选项\n打印设置"
+    ID_FILE_PRINT           "打印活动文档\n打印"
+    ID_FILE_PRINT_PREVIEW   "显示整页\n打印预览"
+END
+
+STRINGTABLE 
+BEGIN
+    ID_APP_ABOUT            "显示程序信息、版本号和版权\n关于"
+    ID_APP_EXIT             "退出应用程序；提示保存文档\n退出"
+    ID_HELP_INDEX           "打开帮助\n帮助主题"
+    ID_HELP_FINDER          "列出帮助主题\n帮助主题"
+    ID_HELP_USING           "显示有关如何使用帮助的说明\n帮助"
+    ID_CONTEXT_HELP         "显示有关单击过的按钮、菜单和窗口的帮助信息\n帮助"
+    ID_HELP                 "显示当前任务或命令的帮助信息\n帮助"
+END
+
+STRINGTABLE 
+BEGIN
+    ID_FILE_MRU_FILE1       "打开此文档"
+    ID_FILE_MRU_FILE2       "打开此文档"
+    ID_FILE_MRU_FILE3       "打开此文档"
+    ID_FILE_MRU_FILE4       "打开此文档"
+    ID_FILE_MRU_FILE5       "打开此文档"
+    ID_FILE_MRU_FILE6       "打开此文档"
+    ID_FILE_MRU_FILE7       "打开此文档"
+    ID_FILE_MRU_FILE8       "打开此文档"
+    ID_FILE_MRU_FILE9       "打开此文档"
+    ID_FILE_MRU_FILE10      "打开此文档"
+    ID_FILE_MRU_FILE11      "打开此文档"
+    ID_FILE_MRU_FILE12      "打开此文档"
+    ID_FILE_MRU_FILE13      "打开此文档"
+    ID_FILE_MRU_FILE14      "打开此文档"
+    ID_FILE_MRU_FILE15      "打开此文档"
+    ID_FILE_MRU_FILE16      "打开此文档"
+END
+
+STRINGTABLE 
+BEGIN
+    ID_NEXT_PANE            "切换到下一个窗格\n下一窗格"
+    ID_PREV_PANE            "切换回上一个窗格\n上一窗格"
+END
+
+STRINGTABLE 
+BEGIN
+    ID_WINDOW_SPLIT         "将活动窗口拆分为多个窗格\n拆分"
+END
+
+STRINGTABLE 
+BEGIN
+    ID_EDIT_CLEAR           "清除选定内容\n清除"
+    ID_EDIT_CLEAR_ALL       "清除全部内容\n全部清除"
+    ID_EDIT_COPY            "复制选定内容并将其放到剪贴板上\n复制"
+    ID_EDIT_CUT             "剪切选定内容并将其放到剪贴板上\n剪切"
+    ID_EDIT_FIND            "查找指定的文本\n查找"
+    ID_EDIT_PASTE           "插入剪贴板内容\n粘贴"
+    ID_EDIT_REPEAT          "重复上一操作\n重复"
+    ID_EDIT_REPLACE         "用其他文本替换特定的文本\n替换"
+    ID_EDIT_SELECT_ALL      "选定整个文档\n全选"
+    ID_EDIT_UNDO            "撤消上一操作\n撤消"
+    ID_EDIT_REDO            "恢复上次撤消的操作\n重做"
+END
+
+STRINGTABLE 
+BEGIN
+    ID_VIEW_TOOLBAR         "显示或隐藏工具栏\n切换工具栏"
+    ID_VIEW_STATUS_BAR      "显示或隐藏状态栏\n切换状态栏"
+END
+
+STRINGTABLE 
+BEGIN
+    AFX_IDS_SCSIZE          "更执行窗口大小"
+    AFX_IDS_SCMOVE          "更执行窗口位置"
+    AFX_IDS_SCMINIMIZE      "将窗口缩小为图标"
+    AFX_IDS_SCMAXIMIZE      "使窗口最大化显示"
+    AFX_IDS_SCNEXTWINDOW    "切换到下一个文档窗口"
+    AFX_IDS_SCPREVWINDOW    "切换到前一个文档窗口"
+    AFX_IDS_SCCLOSE         "关闭活动窗口并提示保存文档"
+END
+
+STRINGTABLE 
+BEGIN
+    AFX_IDS_SCRESTORE       "将窗口恢复到正常大小"
+    AFX_IDS_SCTASKLIST      "激活任务列表"
+END
+
+STRINGTABLE 
+BEGIN
+    AFX_IDS_PREVIEW_CLOSE   "关闭打印预览模式\n取消预览"
+END
+
+STRINGTABLE 
+BEGIN
+    ID_VIEW_ZOOMIN          "放大显示\n放大"
+    ID_VIEW_ZOOMOUT         "缩小显示\n缩小"
+    ID_VIEW_FULLSCREEN      "按此按钮全屏显示\n全屏显示"
+    ID_DRAWSCRIPT_OR_NOT    "按此按钮开始添加笔迹\n添加笔迹按钮"
+    WM_NETWORK_INITIATE     "初始化线程消息\n初始化"
+    WM_NETWORK_TERMINATE    "终止线程\n终止"
+    WM_NETWORK_CONNECT      "连接到服务器\n连接"
+    WM_NETWORK_LOGON        "登陆服务器\n登陆"
+END
+
+STRINGTABLE 
+BEGIN
+    WM_SCOREDLG_HWND        "发送ScoreDlg\nScoreDlg"
+END
+
+STRINGTABLE 
+BEGIN
+    ID_AUTO_TESTING         "自动测试\n自动测试"
+    ID_RESULT_PREPRINTING   "当前批次试执行结果统计\n试执行结果"
+    IDC_USER_KICKOUT        "踢出该用户\n踢出"
+    IDC_USER_RECYCLE        "回收该用户\n回收"
+END
+
+#endif    // Chinese (P.R.C.) resources
+/////////////////////////////////////////////////////////////////////////////
+
+
+
+#ifndef APSTUDIO_INVOKED
+/////////////////////////////////////////////////////////////////////////////
+//
+// Generated from the TEXTINCLUDE 3 resource.
+//
+#define _AFX_NO_OLE_RESOURCES
+#define _AFX_NO_TRACKER_RESOURCES
+#define _AFX_NO_PROPERTY_RESOURCES
+
+#if !defined(AFX_RESOURCE_DLL) || defined(AFX_TARG_CHS)
+LANGUAGE 4, 2
+#pragma code_page(936)
+#include "res\jetManager.rc2"  // ??????¨??????¨??? Microsoft Visual C++ ??????§???????ì?????ì???????ì???????¨??????¨???-??????§???????ì?|??????ì??o???
+#include "afxres.rc"         // ??????§???????ì?????ì???????ì??o??????§???????ì?|???????§???????ì?|??????ì??|?t
+#include "afxprint.rc"       // ????????ì??????????ì????/????????ì??????????ì???????????§???????§????????ì???????¨??????¨????????ì???????¨??????¨????????§???????ì?|??????ì??o???
+#endif
+
+/////////////////////////////////////////////////////////////////////////////
+#endif    // not APSTUDIO_INVOKED
+

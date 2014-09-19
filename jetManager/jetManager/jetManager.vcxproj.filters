@@ -1,0 +1,253 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup>
+    <Filter Include="Source">
+      <UniqueIdentifier>{4FC737F1-C7A5-4376-A066-2A32D752A2FF}</UniqueIdentifier>
+      <Extensions>cpp;c;cxx;def;odl;idl;hpj;bat;asm;asmx</Extensions>
+    </Filter>
+    <Filter Include="Header">
+      <UniqueIdentifier>{93995380-89BD-4b04-88EB-625FBE52EBFB}</UniqueIdentifier>
+      <Extensions>h;hpp;hxx;hm;inl;inc;xsd</Extensions>
+    </Filter>
+    <Filter Include="Resource">
+      <UniqueIdentifier>{67DA6AB6-F800-4c08-8B7A-83BB121AAD01}</UniqueIdentifier>
+      <Extensions>rc;ico;cur;bmp;dlg;rc2;rct;bin;rgs;gif;jpg;jpeg;jpe;resx</Extensions>
+    </Filter>
+    <Filter Include="NetworkClient">
+      <UniqueIdentifier>{624b8046-0cc3-43e6-88bd-d125bfc5e746}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="NetworkClient\Header">
+      <UniqueIdentifier>{a9f5e675-836e-4900-a1fc-e49b8fc32f5e}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="GUI">
+      <UniqueIdentifier>{f79414c4-38dd-4600-b263-8772dc9939e1}</UniqueIdentifier>
+    </Filter>
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="CClient.cpp">
+      <Filter>Source</Filter>
+    </ClCompile>
+    <ClCompile Include="jetManager.cpp">
+      <Filter>Source</Filter>
+    </ClCompile>
+    <ClCompile Include="jetManagerDoc.cpp">
+      <Filter>Source</Filter>
+    </ClCompile>
+    <ClCompile Include="MainFrm.cpp">
+      <Filter>Source</Filter>
+    </ClCompile>
+    <ClCompile Include="Mid.cpp">
+      <Filter>Source</Filter>
+    </ClCompile>
+    <ClCompile Include="PictureView.cpp">
+      <Filter>Source</Filter>
+    </ClCompile>
+    <ClCompile Include="PwdModifyDlg.cpp">
+      <Filter>Source</Filter>
+    </ClCompile>
+    <ClCompile Include="Quality.cpp">
+      <Filter>Source</Filter>
+    </ClCompile>
+    <ClCompile Include="ScriptLine.cpp">
+      <Filter>Source</Filter>
+    </ClCompile>
+    <ClCompile Include="SendNotifyDlg.cpp">
+      <Filter>Source</Filter>
+    </ClCompile>
+    <ClCompile Include="stdafx.cpp">
+      <Filter>Source</Filter>
+    </ClCompile>
+    <ClCompile Include="TimeInterval.cpp">
+      <Filter>Source</Filter>
+    </ClCompile>
+    <ClCompile Include="AsyncSocketEx.cpp">
+      <Filter>NetworkClient</Filter>
+    </ClCompile>
+    <ClCompile Include="Net\NetServer.cpp">
+      <Filter>NetworkClient</Filter>
+    </ClCompile>
+    <ClCompile Include="GUI\controlClientDlg.cpp">
+      <Filter>GUI</Filter>
+    </ClCompile>
+    <ClCompile Include="GUI\dlgManager.cpp">
+      <Filter>GUI</Filter>
+    </ClCompile>
+    <ClCompile Include="GUI\DlgQuality.cpp">
+      <Filter>GUI</Filter>
+    </ClCompile>
+    <ClCompile Include="GUI\DlgPassword.cpp">
+      <Filter>GUI</Filter>
+    </ClCompile>
+    <ClCompile Include="GUI\DlgOperator.cpp">
+      <Filter>GUI</Filter>
+    </ClCompile>
+    <ClCompile Include="GUI\DlgMsg.cpp">
+      <Filter>GUI</Filter>
+    </ClCompile>
+    <ClCompile Include="GUI\DlgControl.cpp">
+      <Filter>GUI</Filter>
+    </ClCompile>
+    <ClCompile Include="GUI\ColorButton.cpp">
+      <Filter>GUI</Filter>
+    </ClCompile>
+    <ClCompile Include="ThreadTaskServer.cpp">
+      <Filter>Source</Filter>
+    </ClCompile>
+    <ClCompile Include="ClientConnServer.cpp">
+      <Filter>NetworkClient</Filter>
+    </ClCompile>
+    <ClCompile Include="SocketConnServer.cpp">
+      <Filter>NetworkClient</Filter>
+    </ClCompile>
+    <ClCompile Include="GUI\DlgPrePrinting.cpp">
+      <Filter>GUI</Filter>
+    </ClCompile>
+    <ClCompile Include="pageTasks.cpp">
+      <Filter>Source</Filter>
+    </ClCompile>
+    <ClCompile Include="cvPicture.cpp">
+      <Filter>Source</Filter>
+    </ClCompile>
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="cclient.h">
+      <Filter>Header</Filter>
+    </ClInclude>
+    <ClInclude Include="jetManager.h">
+      <Filter>Header</Filter>
+    </ClInclude>
+    <ClInclude Include="jetManagerDoc.h">
+      <Filter>Header</Filter>
+    </ClInclude>
+    <ClInclude Include="MainFrm.h">
+      <Filter>Header</Filter>
+    </ClInclude>
+    <ClInclude Include="Mid.h">
+      <Filter>Header</Filter>
+    </ClInclude>
+    <ClInclude Include="PictureView.h">
+      <Filter>Header</Filter>
+    </ClInclude>
+    <ClInclude Include="PwdModifyDlg.h">
+      <Filter>Header</Filter>
+    </ClInclude>
+    <ClInclude Include="Quality.h">
+      <Filter>Header</Filter>
+    </ClInclude>
+    <ClInclude Include="ScriptLine.h">
+      <Filter>Header</Filter>
+    </ClInclude>
+    <ClInclude Include="SendNotifyDlg.h">
+      <Filter>Header</Filter>
+    </ClInclude>
+    <ClInclude Include="stdafx.h">
+      <Filter>Header</Filter>
+    </ClInclude>
+    <ClInclude Include="TimeInterval.h">
+      <Filter>Header</Filter>
+    </ClInclude>
+    <ClInclude Include="AsyncSocketEx.h">
+      <Filter>NetworkClient\Header</Filter>
+    </ClInclude>
+    <ClInclude Include="Net\NetServer.h">
+      <Filter>NetworkClient\Header</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Define\PackProtocol.h">
+      <Filter>NetworkClient\Header</Filter>
+    </ClInclude>
+    <ClInclude Include="GUI\controlClientDlg.h">
+      <Filter>GUI</Filter>
+    </ClInclude>
+    <ClInclude Include="GUI\DlgQuality.h">
+      <Filter>GUI</Filter>
+    </ClInclude>
+    <ClInclude Include="GUI\ColorButton.h">
+      <Filter>GUI</Filter>
+    </ClInclude>
+    <ClInclude Include="GUI\DlgControl.h">
+      <Filter>GUI</Filter>
+    </ClInclude>
+    <ClInclude Include="GUI\dlgManager.h">
+      <Filter>GUI</Filter>
+    </ClInclude>
+    <ClInclude Include="GUI\DlgMsg.h">
+      <Filter>GUI</Filter>
+    </ClInclude>
+    <ClInclude Include="GUI\DlgOperator.h">
+      <Filter>GUI</Filter>
+    </ClInclude>
+    <ClInclude Include="GUI\DlgPassword.h">
+      <Filter>GUI</Filter>
+    </ClInclude>
+    <ClInclude Include="ThreadTaskServer.h">
+      <Filter>Header</Filter>
+    </ClInclude>
+    <ClInclude Include="ClientConnServer.h">
+      <Filter>NetworkClient\Header</Filter>
+    </ClInclude>
+    <ClInclude Include="SocketConnServer.h">
+      <Filter>NetworkClient\Header</Filter>
+    </ClInclude>
+    <ClInclude Include="GUI\DlgPrePrinting.h">
+      <Filter>GUI</Filter>
+    </ClInclude>
+    <ClInclude Include="pageTasks.h">
+      <Filter>Header</Filter>
+    </ClInclude>
+    <ClInclude Include="cvPicture.h">
+      <Filter>Header</Filter>
+    </ClInclude>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="res\bitmap1.bmp">
+      <Filter>Resource</Filter>
+    </None>
+    <None Include="hlp\Images\Bullet.gif">
+      <Filter>Resource</Filter>
+    </None>
+    <None Include="res\cursor1.cur">
+      <Filter>Resource</Filter>
+    </None>
+    <None Include="res\eMarker.ico">
+      <Filter>Resource</Filter>
+    </None>
+    <None Include="res\eMarkerDoc.ico">
+      <Filter>Resource</Filter>
+    </None>
+    <None Include="res\jetManager.ico">
+      <Filter>Resource</Filter>
+    </None>
+    <None Include="res\jetManager.rc2">
+      <Filter>Resource</Filter>
+    </None>
+    <None Include="res\jetManagerDoc.ico">
+      <Filter>Resource</Filter>
+    </None>
+    <None Include="res\Pins.bmp">
+      <Filter>Resource</Filter>
+    </None>
+    <None Include="res\Toolbar.bmp">
+      <Filter>Resource</Filter>
+    </None>
+    <None Include="res\toolbar1.bmp">
+      <Filter>Resource</Filter>
+    </None>
+    <None Include="res\toolbar2.bmp">
+      <Filter>Resource</Filter>
+    </None>
+    <None Include="ReadMe.txt" />
+  </ItemGroup>
+  <ItemGroup>
+    <ResourceCompile Include="jetManager.rc">
+      <Filter>Resource</Filter>
+    </ResourceCompile>
+  </ItemGroup>
+  <ItemGroup>
+    <CustomBuildStep Include="res\jetManager.manifest" />
+  </ItemGroup>
+  <ItemGroup>
+    <CustomBuild Include="Resource.h">
+      <Filter>Header</Filter>
+    </CustomBuild>
+  </ItemGroup>
+</Project>
